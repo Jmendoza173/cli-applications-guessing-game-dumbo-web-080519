@@ -7,7 +7,7 @@ def run_guessing_game
     puts "Goodbye!"
   elsif picked != unknown
     puts "Sorry! The computer guessed #{unknown}."
-  else picked == unknown
+  else picked.to_i == unknown
     puts "You guess the correct number!"
   end
 end
