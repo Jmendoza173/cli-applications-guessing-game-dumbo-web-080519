@@ -5,9 +5,9 @@ def run_guessing_game
   picked = gets.chomp
   if picked == "exit"
     puts "Goodbye!"
-  elsif picked != unknown
+  elsif picked != unknown.to_s
     puts "Sorry! The computer guessed #{unknown}."
-  else picked.to_i == unknown
+  else picked == unknown.to_s
     puts "You guess the correct number!"
   end
 end
